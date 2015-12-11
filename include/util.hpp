@@ -7,7 +7,6 @@
 #include <boost/date_time/gregorian/gregorian.hpp>
 #include <chrono>
 #include <ctime>
-#include "operationstate.h"
 
 using namespace std;
 using namespace std::chrono;
