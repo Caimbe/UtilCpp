@@ -63,6 +63,23 @@ inline days to_chrono_day(const std::tm& tm)
     return d;
 }
 
+inline const vector<string> split(const string& str, const char& delimit)
+{
+	string buff{""};
+	vector<string> vec;
+
+	for(auto c: str)
+	{
+		if(c != delimit) buff+=c;
+		else if(buff != "") {
+			vec.push_back(buff);
+			buff = "";
+		}
+	}
+
+	return vec;
+}
+
 
 #if _MSC_VER || __MINGW32__
 #   include <sys/stat.h>
