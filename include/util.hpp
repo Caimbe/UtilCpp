@@ -3,7 +3,6 @@
 
 #include <iomanip>
 #include <sstream>
-#include <jsoncpp/json/json.h>
 #include <boost/date_time/gregorian/gregorian.hpp>
 #include <chrono>
 #include <ctime>
